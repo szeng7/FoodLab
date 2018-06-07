@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RecipeActivity">
+
+    <item
+        android:id="@+id/favorite_rec"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="@string/favorite"
+        app:showAsAction="ifRoom" />
+
+</menu>

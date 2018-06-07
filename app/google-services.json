@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "449886152913",
+    "firebase_url": "https://foodlab-56852.firebaseio.com",
+    "project_id": "foodlab-56852",
+    "storage_bucket": "foodlab-56852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449886152913:android:77595556d4951446",
+        "android_client_info": {
+          "package_name": "com.example.lalacindyy.foodlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449886152913-of9pv8b9he4ov3tl0d9oqcegp0p2mrh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lalacindyy.foodlab",
+            "certificate_hash": "876f8def0b7ec7d32d29821f045c7e5c4ae0e814"
+          }
+        },
+        {
+          "client_id": "449886152913-8tuqsjemnso9vrfdjg4m0ijdv24dp85l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqvqc0W1tgG3mx8Lxt347pbSVyR9l-T8E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449886152913-8tuqsjemnso9vrfdjg4m0ijdv24dp85l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449886152913:android:97acdb4629dbc9c3",
+        "android_client_info": {
+          "package_name": "com.example.lalacindyy.foodlab.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449886152913-8tuqsjemnso9vrfdjg4m0ijdv24dp85l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqvqc0W1tgG3mx8Lxt347pbSVyR9l-T8E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

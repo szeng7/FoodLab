@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FOODLAB</string>
+    <string name="title_activity_recipe">Recipe</string>
+    <string name="enter">Enter ingredients</string>
+    <string name="image">Title</string>
+    <string name="favorite">Favorite</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="Enter">Add a Tip!</string>
+    <string name="enter_tip_here">Enter tip here!</string>
+    <string name="empty">Empty</string>
+    <string name="tip">Enter your Tip!</string>
+    <string name="go_anonymous">Go Anonymous</string>
+    <string name="sortBy">Sort By</string>
+    <string-array name="sorting_options">
+        <item>Sort by Ingredients Used</item>
+        <item>Sort by Time Needed</item>
+        <item>Sort by Rating</item>
+    </string-array>
+
+    <string-array name="res_option">
+        <item>Diary Free</item>
+        <item>Fat Free</item>
+        <item>Nut Allergy</item>
+    </string-array>
+</resources>

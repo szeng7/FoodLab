@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:fitsSystemWindows="true">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:onClick="openD"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/burger" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/arima_madurai_bold"
+            android:text="SETTINGS"
+            android:textColor="#F28500"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/textView"
+            android:text="Change Password:"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_alignLeft="@+id/textView7"
+            android:ems="15"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="15dp"
+            android:ems="15"
+            android:hint="Confirm new password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText4"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_marginTop="15dp"
+            android:text="Change Email:"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/editText2"
+            android:ems="15"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/mybutton2"
+            android:onClick="changeData"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_alignStart="@+id/button11"
+            android:background="@drawable/mybutton"
+            android:onClick="saveData"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_toEndOf="@+id/button"
+            android:background="@drawable/mybutton"
+            android:onClick="saveData"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/spinner"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="12dp"
+            android:text="Dietary Restrictions:"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_alignLeft="@id/editText2"
+            android:layout_marginTop="10dp"
+            android:text="Culinary Preferences:"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="500dp"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>
