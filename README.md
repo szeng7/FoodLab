@@ -13,3 +13,9 @@ The purpose of this app is to not only reduce the amount of food waste every sin
 ## Features
 
 This app primarily features a search bar where users are able to input ingredients, delimited by commas, to obtain recipes that use the most ingredients provided (given the recipes in the Spoonacular API's database). These rrecipes can then be sorted by relevancy (how many ingredients are used), rating (out of 5 stars) or time needed. After clicking on each recipe, the user can then view the ingredients on one fragment, instructions on another, and tips/comments on the last fragment (and from there, add his/her own). Users will also be able to view pictures of these recipes and add them to his/her favourites. 
+
+## How to Use/See
+
+You can view slides on the features and screenshots of the app in Presentation.pdf
+
+To actually use the app, you'll need to clone the repo and then set up an account with the Spoonacular API on RapidAPI and replace my key-pair in the code of JSONQuery.java (commented the two sets of two lines lines where you'll need it). Unfortunately, due to the "free" subscription still charging my bank account, I had to delete my subscription and then delete the part of my code that accesses it, especially since this is now on GitHub
