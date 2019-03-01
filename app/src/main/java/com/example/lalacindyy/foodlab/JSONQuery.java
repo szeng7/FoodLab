@@ -106,8 +106,8 @@ public class JSONQuery extends AsyncTask{
 
             try{
                 HttpResponse<JsonNode> response = Unirest.get(newUrl)
-                        .header("X-Mashape-Key", "xKJOaJ8LQKmshRRuz5kIywdflh0Ap1Mdb25jsn2vKhLkDctKoq") //Input KEY
-                        .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com") //Input HOST
+                        .header("X-Mashape-Key", "") //Input KEY
+                        .header("X-Mashape-Host", "") //Input HOST
                         .asJson();
                 JSONArray indJsonArray = response.getBody().getArray();
                 JSONObject object = indJsonArray.getJSONObject(0);
@@ -138,8 +138,8 @@ public class JSONQuery extends AsyncTask{
         try{
             Log.d("TAG", "in here");
             HttpResponse<JsonNode> response = Unirest.get(url)
-                    .header("X-Mashape-Key", "xKJOaJ8LQKmshRRuz5kIywdflh0Ap1Mdb25jsn2vKhLkDctKoq")
-                    .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
+                    .header("X-Mashape-Key", "") //Input KEY
+                    .header("X-Mashape-Host", "") //Input HOST
                     .asJson();
             if (response.getBody().getArray().length() == 0) {
                 exit();
